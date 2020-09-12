@@ -1,8 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
+import State from './State';
 
 const App = () => {
-  return <h1>hello</h1>;
+  return (
+    <React.StrictMode>
+      <div className="App">
+        <State />
+        <hr />
+      </div>
+    </React.StrictMode>
+  );
 };
 
 render(<App />, document.getElementById('root'));
