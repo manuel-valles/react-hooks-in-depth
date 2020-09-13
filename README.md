@@ -102,4 +102,7 @@
    - NOTE: In computing, **memoization** or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 
 7. **useCallback** is quite similar and implemented with the same mechanisms as _useMemo_. The goal here is that an Expensive Computation Component only re-renders whenever it absolutely must.
+
    - **React.memo** is similar to _PureComponent_ where a component will do a simple check on its props to see if they've changed and if not it will not re-render this component.
+
+8. **useLayoutEffect** is almost the same as useEffect except that it's synchronous (runs at the same time as componentDidMount and componentDidUpdate whereas useEffect is scheduled after). You should be using useLayoutEffect ONLY to measure DOM nodes for things like animations.
