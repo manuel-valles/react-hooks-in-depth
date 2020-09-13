@@ -83,8 +83,8 @@
     .env
    ```
 
-1. **useState** allows us to make our components stateful (previously required a class component) using just functions (more flexible).
+1. **useState** allows you to make our components stateful (previously required a class component) using just functions (more flexible).
 
 2. **useEffect** recreates the React's lifecycle methods: _componentDidMount_, _componentDidUpdate_, and _componentDidUnmount_. Inside useEffect, you can do any sort of side-effect that will only re-run if one of the parameters in the array of dependencies changes.
 
-3. **useContext**
+3. **useContext** allows you to store data in the UserContext.Provider. useContext just pulls that data out when given a Context object as a parameter. In general, context adds a decent amount of complexity (prop drilling) to an app. Only put things in context that are truly application-wide state like user information or auth keys and then use local state for the rest.
