@@ -89,7 +89,10 @@
 
 3. **useContext** allows you to store data in the UserContext.Provider. useContext just pulls that data out when given a Context object as a parameter. In general, context adds a decent amount of complexity (prop drilling) to an app. Only put things in context that are truly application-wide state like user information or auth keys and then use local state for the rest.
 
-4. **useRef** is useful for things like:
+4. **useRef** is useful for things likeW
+
    - Holding on to setInterval and setTimeout IDs so they can be cleared later;
    - Any bit of statefulness that could change but you don't want it to cause a re-render when it does;
    - Referencing DOM nodes directly.
+
+5. **useReducer** allows you to do Redux-style reducers inside a hook. For example, instead of having a bunch of functions to update our various properties, we can have one reducer that handles all the updates based on an action type.
