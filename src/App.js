@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import ContextComponent from './Context';
 import EffectComponent from './Effect';
+import RefComponent from './Ref';
 import StateComponent from './State';
 
 const App = () => {
@@ -13,6 +14,8 @@ const App = () => {
         <EffectComponent />
         <hr />
         <ContextComponent />
+        <hr />
+        <RefComponent />
         <hr />
       </div>
     </React.StrictMode>
