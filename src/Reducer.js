@@ -29,17 +29,17 @@ const ReducerComponent = () => {
     <div>
       <h1 style={{ color: `rgb(${r}, ${g}, ${b})` }}>useReducer Example</h1>
       <div>
-        <span>{`r: ${r}`}</span>
+        <span>r: {r} </span>
         <button onClick={() => dispatch({ type: 'INCREMENT_R' })}>➕</button>
         <button onClick={() => dispatch({ type: 'DECREMENT_R' })}>➖</button>
       </div>
       <div>
-        <span>{`g: ${g}`}</span>
+        <span>g: {g} </span>
         <button onClick={() => dispatch({ type: 'INCREMENT_G' })}>➕</button>
         <button onClick={() => dispatch({ type: 'DECREMENT_G' })}>➖</button>
       </div>
       <div>
-        <span>{`b: ${b}`}</span>
+        <span>b: {b} </span>
         <button onClick={() => dispatch({ type: 'INCREMENT_B' })}>➕</button>
         <button onClick={() => dispatch({ type: 'DECREMENT_B' })}>➖</button>
       </div>

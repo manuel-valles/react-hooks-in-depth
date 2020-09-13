@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import ContextComponent from './Context';
 import EffectComponent from './Effect';
+import MemoComponent from './Memo';
 import ReducerComponent from './Reducer';
 import RefComponent from './Ref';
 import StateComponent from './State';
@@ -19,6 +20,8 @@ const App = () => {
         <RefComponent />
         <hr />
         <ReducerComponent />
+        <hr />
+        <MemoComponent />
         <hr />
       </div>
     </React.StrictMode>

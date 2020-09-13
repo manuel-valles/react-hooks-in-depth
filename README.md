@@ -96,3 +96,6 @@
    - Referencing DOM nodes directly.
 
 5. **useReducer** allows you to do Redux-style reducers inside a hook. For example, instead of having a bunch of functions to update our various properties, we can have one reducer that handles all the updates based on an action type.
+
+6. **useMemo** is a performance optimization that memoizes expensive function calls so they only are re-evaluated when needed (similar to _useEffect_, where the second parameter is the dependency).
+   - NOTE: In computing, **memoization** or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
