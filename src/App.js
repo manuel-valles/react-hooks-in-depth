@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import CallbackComponent from './Callback';
 import ContextComponent from './Context';
 import EffectComponent from './Effect';
+import ImperativeHandleComponent from './ImpertiveHandle';
 import LayoutEffectComponent from './LayoutEffect';
 import MemoComponent from './Memo';
 import ReducerComponent from './Reducer';
@@ -29,6 +30,7 @@ const App = () => {
         <hr />
         <LayoutEffectComponent />
         <hr />
+        <ImperativeHandleComponent />
       </div>
     </React.StrictMode>
   );

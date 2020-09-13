@@ -106,3 +106,7 @@
    - **React.memo** is similar to _PureComponent_ where a component will do a simple check on its props to see if they've changed and if not it will not re-render this component.
 
 8. **useLayoutEffect** is almost the same as useEffect except that it's synchronous (runs at the same time as componentDidMount and componentDidUpdate whereas useEffect is scheduled after). You should be using useLayoutEffect ONLY to measure DOM nodes for things like animations.
+
+9. **useImperativeHandle** allows to customize methods on an object that is made available to the parents via the **useRef** API.
+
+   - As the example, wrapping the ElaborateInput component in a **forwardRef** call provides a second ref parameter. Meanwhile, the _inputRef_ (**useRef**) is used to directly access the DOM.
