@@ -82,3 +82,9 @@
     .vscode/
     .env
    ```
+
+1. **useState** allows us to make our components stateful (previously required a class component) using just functions (more flexible).
+
+2. **useEffect** recreates the React's lifecycle methods: _componentDidMount_, _componentDidUpdate_, and _componentDidUnmount_. Inside useEffect, you can do any sort of side-effect that will only re-run if one of the parameters in the array of dependencies changes.
+
+3. **useContext**

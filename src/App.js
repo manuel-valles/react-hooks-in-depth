@@ -1,12 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
-import State from './State';
+import EffectComponent from './Effect';
+import StateComponent from './State';
 
 const App = () => {
   return (
     <React.StrictMode>
       <div className="App">
-        <State />
+        <StateComponent />
+        <hr />
+        <EffectComponent />
         <hr />
       </div>
     </React.StrictMode>
