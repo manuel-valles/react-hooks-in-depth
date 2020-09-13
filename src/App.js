@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import CallbackComponent from './Callback';
 import ContextComponent from './Context';
 import EffectComponent from './Effect';
 import MemoComponent from './Memo';
@@ -22,6 +23,8 @@ const App = () => {
         <ReducerComponent />
         <hr />
         <MemoComponent />
+        <hr />
+        <CallbackComponent />
         <hr />
       </div>
     </React.StrictMode>
